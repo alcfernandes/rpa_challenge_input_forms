@@ -1,11 +1,12 @@
 function(e, strRowValues){
-	var strFirstName = strRowValues.split("|")[0];
-	var strLastName = strRowValues.split("|")[1];
-	var strCompanyName = strRowValues.split("|")[2];
-	var strRoleInCompany = strRowValues.split("|")[3];
-	var strAddress = strRowValues.split("|")[4];
-	var strEmail = strRowValues.split("|")[5];
-	var strPhoneNumber = strRowValues.split("|")[6];
+	const rowValues = strRowValues.split("|")
+	var strFirstName = rowValues[0];
+	var strLastName = rowValues[1];
+	var strCompanyName = rowValues[2];
+	var strRoleInCompany = rowValues[3];
+	var strAddress = rowValues[4];
+	var strEmail = rowValues[5];
+	var strPhoneNumber = rowValues[6];
 	
 	var elemLabels = Array.from(document.getElementsByTagName("label"));
 
